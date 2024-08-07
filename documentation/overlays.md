@@ -41,6 +41,7 @@ For now though, I'll just make a list of their addresses and lengths in the one 
 - overlay 00
     - 0x0207E380
     - 0x0243E0
+    - open while building
 - overlay 01
     - 0x0207E380
     - 0x3CC0
@@ -54,7 +55,7 @@ For now though, I'll just make a list of their addresses and lengths in the one 
 - overlay 04
     - 0x0207E380
     - 0x8DA0
-    - loaded on startup!
+    - loaded on start screen!
 - overlay 05
     - 0x0207E380
     - 0x0240C0
@@ -73,7 +74,7 @@ For now though, I'll just make a list of their addresses and lengths in the one 
 - overlay 10
     - 0x020A2780
     - 0x019B60
-    - loaded on startup!
+    - loaded on start screen, and while building
 - overlay 11
     - 0x020A2780
     - 0x20
@@ -83,3 +84,4 @@ For now though, I'll just make a list of their addresses and lengths in the one 
     - 0x7F20
 
 so we have 13 overlays, two of which are empty, and a maximum of two can be loaded in at once.
+the two locations are `0x0207E380` for 00-09 and `0x020A2780` for 10-12
